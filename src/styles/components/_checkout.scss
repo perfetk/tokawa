@@ -1,0 +1,52 @@
+.checkout--table {
+
+    table {
+        font-size: 14px;
+        color: $brand-secondary;
+        width: 100%;
+        table-layout: auto;
+        margin-bottom: 40px;
+        thead {
+            text-align: left;
+            font-size: 19px;
+            font-weight: 200;
+            tr {
+                @include dashed-line('bottom', 'dark');
+                transform: scale(1);
+                position: unset;
+            }
+        }
+       tbody {
+           tr {
+                height: 135px;
+                @include dashed-line('bottom', 'white');
+                transform: scale(1);
+                position: unset;
+
+                td {
+                    &:last-child {
+                        width: 100px;
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                &.checkout-total {
+                    height: auto;
+                    td {
+                        padding-top: 40px;
+                    }
+                    
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            img {
+                width: auto;
+            }
+        }
+    }
+}

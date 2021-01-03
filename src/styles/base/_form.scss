@@ -1,0 +1,34 @@
+//form element
+input { 
+	&:not([type="submit"]) {
+		width: 100%;
+	}
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="textarea"]  {
+    &:active, &:focus {
+		outline: none;
+	}
+}
+input 
+textarea {
+	width: 100%;
+}
+
+select {
+	background-color: transparent;
+	height: 40px;
+	padding: 0 20px;
+	border: 2px solid $brand-secondary;
+	&.small {
+		height: 30px;
+	}
+}
+.form--item {
+	&:not(:last-of-type) {
+		margin-bottom: 20px;
+	}	
+}

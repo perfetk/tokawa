@@ -1,0 +1,63 @@
+//header
+header {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $brand-primary;
+//  border-bottom: 4px dashed $primary-body-font-color;
+@include dashed-line('bottom', 'white');
+  z-index: 20;
+}
+
+.header--icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.shop-basket--icon {
+  position: relative;
+  top: -7px;
+  margin-right: 20px;
+  z-index: 0;
+}
+
+.shopping-cart--counter {
+  width: 100%;
+  position: absolute;
+  bottom: 2px;;
+  left: 0;
+  text-align: center;
+}
+.menu-trigger {
+  position: relative;
+  top: -7px;
+}
+
+.media-icons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -83px;
+  justify-content: flex-end;
+  height: 33px;
+  z-index: 120;
+  a {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+  img {
+    height: 100%;
+    width: auto;
+  }
+}

@@ -1,0 +1,37 @@
+@import url("https://use.typekit.net/eom5axb.css");
+
+$main-font-family: plau, sans-serif;
+$header-font-family: $main-font-family;
+$nav-font-family:$main-font-family;
+
+$brand-primary: #fcac3c;
+$brand-secondary: #6e5b3c;
+
+$footer-background-color: $brand-secondary;
+
+//font colours
+$primary-body-font-color:#fff;
+$secondary-body-font-color: #564c3b;
+$footer-primary-font-color: #e8aa46;
+$footer-secondary-font-color: #fbab3b;
+
+$link-color: $brand-secondary;
+$highlight-color: $brand-primary;
+
+// fonts
+$base-font-type: $main-font-family;
+$header-font: $main-font-family;
+
+//font sizes
+
+$base-font-size: 20px;
+$base-line-height: 28px;
+
+$section-header-font-size: 58px;
+$section-header-line-height: 70px;
+
+
+// media queries settings
+
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;

@@ -1,0 +1,39 @@
+.blog-listing {
+    text-align: center;
+    &--item {
+		@include dashed-line('top', 'dark');
+        padding-top: 40px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 70px;
+        }
+        &__title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .read-more {
+            margin: 30px auto;
+        }
+    }
+}
+
+.blog-entry {
+    text-align: center;
+
+    &--title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__decor {
+        &:last-of-type {
+            margin-top: 70px;
+        }
+    }
+    .back--button {
+        display: block;
+        width: fit-content;
+        margin: 47px auto;
+    }
+}

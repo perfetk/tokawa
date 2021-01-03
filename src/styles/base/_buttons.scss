@@ -1,0 +1,78 @@
+//buttons
+.button--primary {
+    position: relative;
+
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+    font-size: $base-font-size;
+    font-family: $main-font-family;
+    color: $brand-secondary;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border: 2px solid #6e5b3c;
+        opacity: .5;
+        box-sizing: border-box;
+    }
+
+    &.icon-button {
+        padding-left: 42px;
+        justify-content: space-between;
+
+        &.left {
+            padding-right: 42px;
+        }
+
+        &:after {
+            height: 17px;
+            content: url('../images/icons/arrow.png');
+            display: block;
+            margin-left: 42px;
+        }
+    }
+}
+
+.button--secondary {
+    height: 40px;
+    border: 0;
+    background-color: $brand-secondary;
+    font-size: $base-font-size;
+    font-family: $main-font-family;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 0;
+
+    &.icon-button {
+        padding-left: 42px;
+        justify-content: space-between;
+        &:after {
+            height: 17px;
+            content: url('../images/icons/arrow-white.png');
+            display: block;
+            margin-left: 42px;
+        }
+    }
+}
+
+.back--button {
+    img {
+        width: auto;;
+    }
+}
+.small {
+    height: 30px;
+    font-size: 15px;
+}

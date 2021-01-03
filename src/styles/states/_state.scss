@@ -1,0 +1,16 @@
+.contact-open {
+    .page-container {
+        
+        transform:translateX(-50%);
+        &:after {
+            height: 100%;
+            opacity: .6;
+            z-index: 10;
+        }
+    }
+
+    .contact {
+         transform: translateX(0);
+     }
+}
+
