@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
         480: 3,
         840: 4,
     };
-    let wrapper = document.getElementById('columns-wrapper');
+    let wrapper = document.querySelector('.columns-wrapper');
+    alert
     let grid = new Columns(wrapper, {
-        columns: 3
+        columns: 3, 
+        breakpoints: breakpoints,
     });
 });
